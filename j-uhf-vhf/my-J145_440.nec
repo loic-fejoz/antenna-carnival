@@ -1,0 +1,19 @@
+CM 
+CE
+SY h1=0.47
+SY h2=0.14
+SY h3=1.4
+SY d2=0.05
+SY d3=0.15
+SY radius=0.002
+GW	1	10	0	0	0	0	0	h1	radius
+GW	2	10	d2	0	0	d2	0	h2	radius
+GW	3	20	d3	0	0	d3	0	h3	radius
+GW	4	1	0	0	0	d2	0	0	radius
+GW	5	2	d2	0	0	d3	0	0	radius
+GE	0
+GN	-1
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	145	0
+EN

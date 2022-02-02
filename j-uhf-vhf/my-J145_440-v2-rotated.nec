@@ -1,0 +1,23 @@
+CM 
+CE
+SY h1=0.47	'0.438
+SY h2=0.14	'0.144
+SY h3=1.4	'1.43
+SY d2=0.05
+SY d3=0.15
+SY radius=0.002
+SY h=1.5
+SY x_angle=0
+SY y_angle=0
+SY z_angle=0
+GW	1	10	0	0	h	h1*sin(y_angle)	h1*-cos(y_angle)*sin(x_angle)	(h1*(cos(x_angle)*sin(y_angle)*sin(z_angle) + cos(z_angle)*sin(x_angle))+h1*cos(x_angle)*cos(y_angle))+h	radius
+GW	2	10	d2*cos(y_angle)*cos(z_angle)	d2*(cos(z_angle)*sin(x_angle)*sin(y_angle) + cos(x_angle)*sin(z_angle))	d2*(-cos(x_angle)*cos(z_angle)*sin(y_angle) + sin(x_angle)*sin(z_angle))+h	(d2*cos(y_angle)*cos(z_angle)+h2*sin(y_angle))	(d2*(cos(z_angle)*sin(x_angle)*sin(y_angle) + cos(x_angle)*sin(z_angle))+h2*-cos(y_angle)*sin(x_angle))	((d2*(-cos(x_angle)*cos(z_angle)*sin(y_angle) + sin(x_angle)*sin(z_angle))+h2*(cos(x_angle)*sin(y_angle)*sin(z_angle) + cos(z_angle)*sin(x_angle)))+h2*cos(x_angle)*cos(y_angle))+h	radius
+GW	3	20	d3*cos(y_angle)*cos(z_angle)	d3*(cos(z_angle)*sin(x_angle)*sin(y_angle) + cos(x_angle)*sin(z_angle))	d3*(-cos(x_angle)*cos(z_angle)*sin(y_angle) + sin(x_angle)*sin(z_angle))+h	(d3*cos(y_angle)*cos(z_angle)+h3*sin(y_angle))	(d3*(cos(z_angle)*sin(x_angle)*sin(y_angle) + cos(x_angle)*sin(z_angle))+h3*-cos(y_angle)*sin(x_angle))	((d3*(-cos(x_angle)*cos(z_angle)*sin(y_angle) + sin(x_angle)*sin(z_angle))+h3*(cos(x_angle)*sin(y_angle)*sin(z_angle) + cos(z_angle)*sin(x_angle)))+h3*cos(x_angle)*cos(y_angle))+h	radius
+GW	4	1	0	0	h	d2*cos(y_angle)*cos(z_angle)	d2*(cos(z_angle)*sin(x_angle)*sin(y_angle) + cos(x_angle)*sin(z_angle))	d2*(-cos(x_angle)*cos(z_angle)*sin(y_angle) + sin(x_angle)*sin(z_angle))+h	radius
+GW	5	2	d2*cos(y_angle)*cos(z_angle)	d2*(cos(z_angle)*sin(x_angle)*sin(y_angle) + cos(x_angle)*sin(z_angle))	d2*(-cos(x_angle)*cos(z_angle)*sin(y_angle) + sin(x_angle)*sin(z_angle))+h	d3*cos(y_angle)*cos(z_angle)	d3*(cos(z_angle)*sin(x_angle)*sin(y_angle) + cos(x_angle)*sin(z_angle))	d3*(-cos(x_angle)*cos(z_angle)*sin(y_angle) + sin(x_angle)*sin(z_angle))+h	radius
+GE	1
+GN	2	0	0	0	4	0.003
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	440	0
+EN
