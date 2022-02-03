@@ -2,7 +2,7 @@
 
 Dans cette étude, j'ai cherché à étudier une antenne qui est fait une combinaison de 2 antennes en J : une partie étant dédiée à l'UHF, l'autre à la VHF.
 
-![](wireframe.png)
+![](dessin-cotation.png)
 
 | paramètre   | dimension |
 |-------------|-----------|
@@ -19,7 +19,7 @@ Voici quelques liens la décrivant :
 * http://www.arrowantennas.com/osj/j-pole.html
 * https://www.n4nrv.org/build-and-review-dual-band-j-pole-144-440mhz/
 
-Pour rappel :
+Pour rappel, les bandes radio-amateurs :
 
 |    |   min |   max |
 |----|-------|-------|
@@ -33,10 +33,10 @@ J'expliquerai plus loin comment l'accorder.
 
 La première étape a donc été de modéliser [cette antenne au format NEC](./my-J145-440.nec) (classique dans le domaine).
 
-J'ai alors utilisé 4nec2 pour faire une analyse de fréquence :
+J'ai alors utilisé [4nec2](https://www.qsl.net/4nec2/) pour faire une analyse de fréquence :
 ![](./frequency-analysis-no-ground.png)
 
-Le résultat étant attrayant, j'ai alors continué en visualisant le rayonnement en champs lointain.
+Le résultat étant attrayant, j'ai alors continué en visualisant le rayonnement en champs lointains.
 
 
 | VHF                      | UHF                      |
@@ -47,6 +47,7 @@ Le résultat étant attrayant, j'ai alors continué en visualisant le rayonnemen
 
 
 Ou encore sur le même diagramme (rouge 145Mhz, bleu 440Mhz) :
+
 ![](farfield-slice-comparison.png)
 
 Première conclusion, c'est bien une antenne omnidirectionnelle ...pour de la radio terrestre et en VHF.
@@ -72,7 +73,7 @@ Attention : l'échelle des couleurs varies d'une image à l'autre (je ne maitris
 |      comparatif| ![](./farfield-slice-ground-comparison-145.png) |  ![](./farfield-slice-ground-comparison-440.png) |
 
 
-L'effet de sol n'est pas négligeable, et sans surprise surtout en VHF, puisque nous ne sommes à plusieurs longueurs d'onde de hauteur. soit.
+L'effet de sol n'est pas négligeable, et sans surprise surtout en VHF, puisque nous ne sommes pas à plusieurs longueurs d'onde de hauteur. Soit.
 
 Mais que se passe t'il si maintenant l'antenne n'est pas exactement à la verticale ?
 
@@ -91,7 +92,7 @@ Admettons qu'on lui laisse sa chance, et que nous voulions la fabriquer, alors i
 
 Pour comprendre, tout cela il faudrait étudier ces longueurs et leurs interactions. Même en admettant que chacune de ces longueurs puissent n'avoir que 2 valeurs possibles, alors il faudrait $2^6=64$ expériences.
 
-Dans ces cas là, il faut regarder des plans d'expériences afin d'effectuer moins d'expériences tout en approfondissant notre connaissance d'un système.
+Dans ces cas là, il faut regarder du côté des plans d'expériences afin d'effectuer moins d'expériences tout en approfondissant notre connaissance d'un système.
 Parmi ces méthodes, il en est une appelée [méthode de Taguchi](https://ellistat.com/Les-plans-d-experiences-par-la-methode-Taguchi.pdf) du nom de son inventeur.
 
 Notre objectif est d'étudier le fonctionnement nominale. C'est-à-dire de rechercher les interactions non nulles, voir de rechercher un modèle prédictif, et surtout d'atteindre une valeur cible. Dans ce cas, la méthode nous propose une table appelée $L16$ qui nous indique les 16 expériences à menées. Et elle devrait nous permettre d'en apprendre d'avantage sur les interactions ou non entre ces paramètres.
@@ -105,11 +106,11 @@ Tout cela se retrouve dans la table suivante (pointant aussi vers le tableur ass
 [![](./table-experience-L16.png)](./antenna-Juhf-vhf-analysis.ods)
 
 Une fois ceci fait, nous pouvons alors étudier l'impact de chacun des paramètres d'une manière plus fine que si nous faisions varier individuellement les paramètres tout en ayant économisé des expériences.
-Oui c'est fastidieux !
+Oui c'est fastidieux quand même !
 
 Pour cela, il faut calculer des moyennes des effets par rapport à la moyenne sur toutes les expériences. Je vous épargne les calculs mais vous pouvez les retrouver dans le tableur.
 
-Comme par constructin, on ne peut que raccourcit un rayonnant, je n'indique ci-après que l'effet du raccourcicement. Si rien n'est indiqué, c'est que l'autre bande est peu affectée.
+Comme par construction, on ne peut que raccourcit un rayonnant, je n'indique ci-après que l'effet du raccourcissement. Si rien n'est indiqué, c'est que l'autre bande est peu affectée.
 
 * diminuer $h_1$ :
   * augmente l’UHF et améliore son SWR
@@ -123,7 +124,7 @@ Comme par constructin, on ne peut que raccourcit un rayonnant, je n'indique ci-a
   * augmente la VHF et améliore son SWR
 * diminuer $d_3$
   * a peu d’effet sur les SWR
-  * augmente les fréquences
+  * augmente l'UHF et la VHF
 
 NB : Je n'ai pas encore mené l'étude des interactions au bout. TODO
 
@@ -135,13 +136,13 @@ Si l'on considère que par construction $d_2$ et $d_3$ sont fixes, je propose do
 3. sur $h_3$ pour l'UHF
 4. reboucler entre 2 et 3
 
-Si la construction le permet, jouer sur $d_3$ est intéressant car décale les fréquences à peu près d'autant sans modifier leur SWR.
+Si le mode de construction le permet, jouer sur $d_3$ est intéressant car cela décale les fréquences à peu près d'autant sans modifier leurs SWR.
 
 Cela reste quand même plus facile sur un simulateur qu'en construction réelle. Ceci sera donc la prochaine étape.
 
 ## Réalisation à base de mètre-ruban
 
-Il est noté que dans les études précédentes ainsi que dans les réalisations visibles sur Intenet, il est utilisée des baguettes en aluminium ronde, que j'ai d'ailleurs considérée de diamètre 4mm.
+Il est à noté que dans les études précédentes ainsi que dans les réalisations visibles sur Intenet, il est utilisé des baguettes en aluminium ronde, que j'ai d'ailleurs considérée de diamètre 4mm.
 
 La réalisation envisagée est à base de mètre-ruban de largeur 18mm et de faible épaisseur. Je n'ai pas encore fait de simulation mais je n'ose imaginer les impacts que cela va avoir sur les longueurs ! 
 
