@@ -24,7 +24,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.3112072"
-     inkscape:cx="421.36741"
+     inkscape:cx="258.54037"
      inkscape:cy="27.836942"
      inkscape:window-width="1920"
      inkscape:window-height="991"
@@ -88,7 +88,10 @@
      transform="translate(-15.266614,-86.995892)">
     <g
        id="g1829"
-       transform="rotate(90,64.327452,147.90297)">
+       transform="rotate(90,64.327452,147.90297)"
+       inkscape:export-filename="C:\Users\loic\projets\antenna-carnival\j-uhf-vhf\dessin-cotation.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <rect
          style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.0418551"
          id="rect31"
@@ -127,7 +130,10 @@
     </g>
     <g
        id="g2555"
-       transform="translate(0.65832169,12.26235)">
+       transform="translate(0.65832169,12.26235)"
+       inkscape:export-filename="C:\Users\loic\projets\antenna-carnival\j-uhf-vhf\dessin-cotation.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#StopL);marker-end:url(#StopL)"
          d="M 34.671608,83.826293 82.29021,84.045734"
@@ -142,7 +148,10 @@
        style="font-style:normal;font-weight:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="51.749104"
        y="93.067902"
-       id="text5155"><tspan
+       id="text5155"
+       inkscape:export-filename="C:\Users\loic\projets\antenna-carnival\j-uhf-vhf\dessin-cotation.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan5153"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Verdana;-inkscape-font-specification:Verdana;stroke-width:0.264583"
@@ -152,7 +161,10 @@
    id="tspan16929">1</tspan></tspan></text>
     <g
        id="g20513"
-       transform="matrix(1.1849969,0,0,0.93146735,-5.6606645,47.369551)">
+       transform="matrix(1.1849969,0,0,0.93146735,-5.6606645,47.369551)"
+       inkscape:export-filename="C:\Users\loic\projets\antenna-carnival\j-uhf-vhf\dessin-cotation.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#StopL);marker-end:url(#StopL)"
          d="M 34.671608,83.826293 45.840863,83.724277"
@@ -169,7 +181,10 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-position:sub;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="37.041187"
        y="121.97878"
-       id="text20519"><tspan
+       id="text20519"
+       inkscape:export-filename="C:\Users\loic\projets\antenna-carnival\j-uhf-vhf\dessin-cotation.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan20805"
          style="font-size:7.05556px"
@@ -180,7 +195,10 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-position:sub;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="96.059723"
        y="127.39293"
-       id="text20845"><tspan
+       id="text20845"
+       inkscape:export-filename="C:\Users\loic\projets\antenna-carnival\j-uhf-vhf\dessin-cotation.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan21789"
          style="font-size:7.05556px"
@@ -188,7 +206,10 @@
          y="127.39293">h3</tspan></text>
     <g
        id="g21169"
-       transform="translate(0.65832651,46.566027)">
+       transform="translate(0.65832651,46.566027)"
+       inkscape:export-filename="C:\Users\loic\projets\antenna-carnival\j-uhf-vhf\dessin-cotation.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#StopL);marker-end:url(#StopL)"
          d="M 34.671608,83.826293 173.3328,84.045734"
@@ -204,10 +225,16 @@
        style="fill:none;stroke:#000000;stroke-width:0.278412;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#StopL);marker-end:url(#StopL)"
        d="m 26.852947,104.48457 -0.02368,-4.745821"
        id="path28823"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\loic\projets\antenna-carnival\j-uhf-vhf\dessin-cotation.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <g
        id="g29232"
-       transform="matrix(0,-1.1849969,0.93146735,0,-46.579471,154.06003)">
+       transform="matrix(0,-1.1849969,0.93146735,0,-46.579471,154.06003)"
+       inkscape:export-filename="C:\Users\loic\projets\antenna-carnival\j-uhf-vhf\dessin-cotation.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#StopL);marker-end:url(#StopL)"
          d="M 33.407314,83.826293 45.840863,83.724277"
@@ -229,7 +256,10 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-position:sub;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="22.926878"
        y="114.11384"
-       id="text29533"><tspan
+       id="text29533"
+       inkscape:export-filename="C:\Users\loic\projets\antenna-carnival\j-uhf-vhf\dessin-cotation.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan30245"
          x="22.926878"
@@ -237,17 +267,26 @@
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart)"
        d="m 26.852946,104.48457 v 2.59999"
-       id="path76" />
+       id="path76"
+       inkscape:export-filename="C:\Users\loic\projets\antenna-carnival\j-uhf-vhf\dessin-cotation.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart)"
        d="m 26.829266,99.738748 v -3.355512 l -2.64428,-2.068923 h -8.418372"
-       id="path290" />
+       id="path290"
+       inkscape:export-filename="C:\Users\loic\projets\antenna-carnival\j-uhf-vhf\dessin-cotation.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-position:sub;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="17.64756"
        y="92.425827"
-       id="text1207"><tspan
+       id="text1207"
+       inkscape:export-filename="C:\Users\loic\projets\antenna-carnival\j-uhf-vhf\dessin-cotation.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan1205"
          x="17.64756"

@@ -1,8 +1,16 @@
+---
+title: étude d'antenne double-J VHF/UHF
+author:
+ - Loïc Fejoz
+url: https://github.com/loic-fejoz/antenna-carnival/
+date: 2022-02-03
+lang: fr-fr
+---
 # Antenne double-J pour l'VHF et la UHF
 
 Dans cette étude, j'ai cherché à étudier une antenne qui est fait une combinaison de 2 antennes en J : une partie étant dédiée à l'UHF, l'autre à la VHF.
 
-![](dessin-cotation.png)
+![](dessin-cotation.png){ width=12cm }
 
 | paramètre   | dimension |
 |-------------|-----------|
@@ -14,10 +22,11 @@ Dans cette étude, j'ai cherché à étudier une antenne qui est fait une combin
 | rayon       |        2mm|
 
 Voici quelques liens la décrivant :
-* https://nt1k.com/open-stub-j-pole-project-completed-many-times/
-* https://forums.radioreference.com/threads/open-stub-j-poles.367174/
-* http://www.arrowantennas.com/osj/j-pole.html
-* https://www.n4nrv.org/build-and-review-dual-band-j-pole-144-440mhz/
+
+* [https://nt1k.com/open-stub-j-pole-project-completed-many-times/](https://nt1k.com/open-stub-j-pole-project-completed-many-times/)
+* [https://forums.radioreference.com/threads/open-stub-j-poles.367174/](https://forums.radioreference.com/threads/open-stub-j-poles.367174/)
+* [http://www.arrowantennas.com/osj/j-pole.html](http://www.arrowantennas.com/osj/j-pole.html)
+* [https://www.n4nrv.org/build-and-review-dual-band-j-pole-144-440mhz/](https://www.n4nrv.org/build-and-review-dual-band-j-pole-144-440mhz/)
 
 Pour rappel, les bandes radio-amateurs :
 
@@ -34,21 +43,22 @@ J'expliquerai plus loin comment l'accorder.
 La première étape a donc été de modéliser [cette antenne au format NEC](./my-J145-440.nec) (classique dans le domaine).
 
 J'ai alors utilisé [4nec2](https://www.qsl.net/4nec2/) pour faire une analyse de fréquence :
+
 ![](./frequency-analysis-no-ground.png)
 
 Le résultat étant attrayant, j'ai alors continué en visualisant le rayonnement en champs lointains.
 
 
-| VHF                      | UHF                      |
-|---|---|
-|145Mhz| 440Mhz |
-|![145Mhz ARRL style champs lointain ](./farfield-145.png)   |![](./farfield-440.png)   |
-|![](./farfield-slice-145.png)   |![](./farfield-slice-440.png)   |
+|  VHF   |   UHF  |
+|--------|--------|
+|  145Mhz|  440Mhz|
+|![145Mhz ARRL style champs lointain ](./farfield-145.png){ width=7cm }   |![](./farfield-440.png){ width=7cm }   |
+|![](./farfield-slice-145.png){ width=7cm }    |![](./farfield-slice-440.png){ width=7cm }   |
 
 
 Ou encore sur le même diagramme (rouge 145Mhz, bleu 440Mhz) :
 
-![](farfield-slice-comparison.png)
+![](farfield-slice-comparison.png){ width=7cm }
 
 Première conclusion, c'est bien une antenne omnidirectionnelle ...pour de la radio terrestre et en VHF.
 En UHF, c'est plus mitigé et elle a un effet directif un peu particulier.
@@ -67,22 +77,22 @@ Attention : l'échelle des couleurs varies d'une image à l'autre (je ne maitris
 
 | hauteur | VHF | UHF |
 |---------|-----|-----|
-|     1,5m| ![](./farfield-ground-145-150cm.png) |  ![](./farfield-ground-440-150cm.png) |
-|       5m| ![](./farfield-ground-145-500cm.png) |  ![](./farfield-ground-440-500cm.png) |
-|      10m| ![](./farfield-ground-145-1000cm.png) |  ![](./farfield-ground-440-1000cm.png) |
-|      comparatif| ![](./farfield-slice-ground-comparison-145.png) |  ![](./farfield-slice-ground-comparison-440.png) |
+|     1,5m| ![](./farfield-ground-145-150cm.png){ width=7cm } |  ![](./farfield-ground-440-150cm.png){ width=7cm } |
+|       5m| ![](./farfield-ground-145-500cm.png){ width=7cm } |  ![](./farfield-ground-440-500cm.png){ width=7cm } |
+|      10m| ![](./farfield-ground-145-1000cm.png){ width=7cm } |  ![](./farfield-ground-440-1000cm.png){ width=7cm } |
+|      comparatif| ![](./farfield-slice-ground-comparison-145.png){ width=7cm } |  ![](./farfield-slice-ground-comparison-440.png){ width=7cm } |
 
 
 L'effet de sol n'est pas négligeable, et sans surprise surtout en VHF, puisque nous ne sommes pas à plusieurs longueurs d'onde de hauteur. Soit.
 
-Mais que se passe t'il si maintenant l'antenne n'est pas exactement à la verticale ?
+Mais que se passe t'il si maintenant l'antenne n'est pas exactement à la verticale&nbsp;?
 
 | rotation | VHF | UHF |
 |----------|-----|-----|
-|   x 30°  | ![](./farfield-ground-145-150cm-x30.png) |  ![](./farfield-ground-440-150cm-x30.png) |
-|   y 30°  | ![](./farfield-ground-145-150cm-y30.png) |  ![](./farfield-ground-440-150cm-y30.png) |
-|   y -30° | ![](./farfield-ground-145-150cm-y-30.png) |  ![](./farfield-ground-440-150cm-y-30.png) |
-|      comparatif| ![](./farfield-slice-ground-rotation-comparison-145.png) |  ![](./farfield-slice-ground-rotation-comparison-440.png) |
+|   x 30°  | ![](./farfield-ground-145-150cm-x30.png){ width=7cm } |  ![](./farfield-ground-440-150cm-x30.png){ width=7cm } |
+|   y 30°  | ![](./farfield-ground-145-150cm-y30.png){ width=7cm } |  ![](./farfield-ground-440-150cm-y30.png){ width=7cm } |
+|   y -30° | ![](./farfield-ground-145-150cm-y-30.png){ width=7cm } |  ![](./farfield-ground-440-150cm-y-30.png){ width=7cm } |
+|      comparatif| ![](./farfield-slice-ground-rotation-comparison-145.png){ width=7cm } |  ![](./farfield-slice-ground-rotation-comparison-440.png){ width=7cm } |
 
 Autant l'inclinaison sur le coté est assez attendu, c'est-à-dire qu'il fait "ressortir" la même figure de gain que sans l'effet sol, autant l'inclinaison avant/arrière est assez surprenante !
 
@@ -103,7 +113,8 @@ La méthode nous indique où placer les paramètres principaux (en l'occurence A
 Pour chacune des expériences, j'ai relevé les fréquences de résonnance en UHV, en VHF, ainsi que les SWR associés.
 
 Tout cela se retrouve dans la table suivante (pointant aussi vers le tableur associé).
-[![](./table-experience-L16.png)](./antenna-Juhf-vhf-analysis.ods)
+
+[![](./table-experience-L16.png)](https://github.com/loic-fejoz/antenna-carnival/blob/main/j-uhf-vhf/antenna-Juhf-vhf-analysis.ods?raw=true)
 
 Une fois ceci fait, nous pouvons alors étudier l'impact de chacun des paramètres d'une manière plus fine que si nous faisions varier individuellement les paramètres tout en ayant économisé des expériences.
 Oui c'est fastidieux quand même !
