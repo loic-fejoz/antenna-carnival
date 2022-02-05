@@ -8,7 +8,7 @@ lang: fr-fr
 ---
 # Antenne double-J pour l'VHF et la UHF
 
-Dans cette étude, j'ai cherché à étudier une antenne qui est fait une combinaison de 2 antennes en J : une partie étant dédiée à l'UHF, l'autre à la VHF.
+Dans cette étude, j'ai cherché à étudier une antenne qui est fait une combinaison de 2 antennes en J : une partie étant dédiée à l'UHF, l'autre à la VHF. Le code source du PDF, les images, les modèles NEC sont tous disponibles sous licence MIT dans le projet GitHub afférent&nbsp;: [https://github.com/loic-fejoz/antenna-carnival/](https://github.com/loic-fejoz/antenna-carnival/)
 
 ![](dessin-cotation.png){ width=12cm }
 
@@ -157,5 +157,35 @@ Il est à noté que dans les études précédentes ainsi que dans les réalisati
 
 La réalisation envisagée est à base de mètre-ruban de largeur 18mm et de faible épaisseur. Je n'ai pas encore fait de simulation mais je n'ose imaginer les impacts que cela va avoir sur les longueurs ! 
 
-Le reste à venir !
+Voici en image la réalisation&nbsp;de test à base de mètre-ruban, rivet, et carton(sic)&nbsp;:
 
+![](IMG_20220204_083622-resized.jpg)
+
+Et en résumé :
+
+|           |    $f$    |    SWR    |
+|-----------|-----------|-----------|
+|    VHF    | 146,26MHz |   1,09    |
+|    UHF    | 433,91MHz |   1,19    |
+|  cible    | 439,75MHz |   1,30    |
+
+Comme vu lors de la simulation, ce n'est pas facile à régler mais je crois que je suis arrivé assez proche des valeurs désirées. On peut noter qu'à ces fréquences, l'impédance est relativement proche de 50$\Omega$ (mais légèrement inductive dans mon cas). Au passage, lors du réglage, j'ai retrouvé le même comportement que lors de la simulation et le même type de courbes.
+
+| paramètre   |  dimension  |
+|-------------|-------------|
+| $h_1$       |        440mm|
+| $h_2$       |        143mm|
+| $h_3$       |       1380mm|
+| $d_2$       |         67mm|
+| $d_3$       |        165mm|
+| ~~rayon~~   |     18x0.2mm|
+
+Il faut dire aussi qu'une des différences est $d_2$ car j'ai construit "écartement" au lieu de centre à centre... 
+
+![](vna-2022-02-04_08-32-58.png)
+![](vna-2022-02-04_08-35-12.png)
+![](vna-2022-02-04_08-33-41.png)
+
+Sur ces courbes, on peut aussi noter que les bandes radioamateurs UHF et VHF sont bien couvertes dans les bandes à -10dB.
+
+Il ne me reste plus qu'à la tester sur le terrain. En parlant de terrain, le poids est évidement très léger ainsi. Il y a plus lourd de coaxial que d'antenne proprement dite.
