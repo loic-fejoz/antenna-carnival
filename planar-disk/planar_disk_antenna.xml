@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<ContinuousStructure CoordSystem="0">
+    <RectilinearGrid DeltaUnit="0.001" CoordSystem="0">
+        <XLines Qty="9">-2.8,-0.933333333333333,-0.7,-0.233333333333333,0.233333333333333,0.7,0.933333333333333,2.8,0</XLines>
+        <YLines Qty="18">-4.2,-2.101,-1.50071428571429,-1.4,-0.900428571428571,-0.300142857142857,-0.001,0.001,0.300142857142857,0.900428571428571,1.4,1.50071428571429,2.101,4.2,0,0.001,0.002,0.003</YLines>
+        <ZLines Qty="5">-1.4,-0.466666666666667,0.466666666666667,1.4,0.003</ZLines>
+    </RectilinearGrid>
+    <BackgroundMaterial Epsilon="1" Mue="1" Kappa="0" Sigma="0" />
+    <ParameterSet />
+    <Properties>
+        <Metal ID="0" Name="disk1">
+            <FillColor R="103" G="198" B="105" a="255" />
+            <EdgeColor R="103" G="198" B="105" a="255" />
+            <Primitives>
+                <Cylinder Priority="0" Radius="7.000000e-01">
+                    <P1 X="0.000000e+00" Y="7.005000e-01" Z="0.000000e+00" />
+                    <P2 X="0.000000e+00" Y="7.005000e-01" Z="3.000000e-03" />
+                </Cylinder>
+            </Primitives>
+        </Metal>
+        <Metal ID="1" Name="disk2">
+            <FillColor R="115" G="81" B="255" a="255" />
+            <EdgeColor R="115" G="81" B="255" a="255" />
+            <Primitives>
+                <Cylinder Priority="0" Radius="7.000000e-01">
+                    <P1 X="0.000000e+00" Y="-7.005000e-01" Z="0.000000e+00" />
+                    <P2 X="0.000000e+00" Y="-7.005000e-01" Z="3.000000e-03" />
+                </Cylinder>
+            </Primitives>
+        </Metal>
+        <LumpedElement ID="2" Name="port_resist_1" Direction="1" Caps="1" R="5.000000e+01" C="nan" L="nan">
+            <FillColor R="74" G="236" B="41" a="255" />
+            <EdgeColor R="74" G="236" B="41" a="255" />
+            <Primitives>
+                <Box Priority="5">
+                    <P1 X="0.000000e+00" Y="5.000000e-04" Z="3.000000e-03" />
+                    <P2 X="0.000000e+00" Y="-5.000000e-04" Z="3.000000e-03" />
+                </Box>
+            </Primitives>
+        </LumpedElement>
+        <Excitation ID="3" Name="port_excite_1" Number="0" Frequency="0.000000e+00" Delay="0.000000e+00" Type="0" Excite="0.000000e+00,1.000000e+00,0.000000e+00" PropDir="0.000000e+00,0.000000e+00,0.000000e+00">
+            <FillColor R="205" G="186" B="171" a="255" />
+            <EdgeColor R="205" G="186" B="171" a="255" />
+            <Primitives>
+                <Box Priority="5">
+                    <P1 X="0.000000e+00" Y="5.000000e-04" Z="3.000000e-03" />
+                    <P2 X="0.000000e+00" Y="-5.000000e-04" Z="3.000000e-03" />
+                </Box>
+            </Primitives>
+            <Weight X="1.000000e+00" Y="1.000000e+00" Z="1.000000e+00" />
+        </Excitation>
+        <ProbeBox ID="4" Name="port_ut_1" Number="0" Type="0" Weight="-1" NormDir="-1" StartTime="0" StopTime="0">
+            <FillColor R="242" G="251" B="227" a="255" />
+            <EdgeColor R="242" G="251" B="227" a="255" />
+            <Primitives>
+                <Box Priority="0">
+                    <P1 X="0.000000e+00" Y="5.000000e-04" Z="3.000000e-03" />
+                    <P2 X="0.000000e+00" Y="-5.000000e-04" Z="3.000000e-03" />
+                </Box>
+            </Primitives>
+        </ProbeBox>
+        <ProbeBox ID="5" Name="port_it_1" Number="0" NormDir="1" Type="1" Weight="-1" StartTime="0" StopTime="0">
+            <FillColor R="70" G="124" B="194" a="255" />
+            <EdgeColor R="70" G="124" B="194" a="255" />
+            <Primitives>
+                <Box Priority="0">
+                    <P1 X="0.000000e+00" Y="0.000000e+00" Z="3.000000e-03" />
+                    <P2 X="0.000000e+00" Y="0.000000e+00" Z="3.000000e-03" />
+                </Box>
+            </Primitives>
+        </ProbeBox>
+        <DumpBox ID="6" Name="nf2ff_E" Number="0" Type="0" Weight="1" NormDir="-1" StartTime="0" StopTime="0" DumpType="0" DumpMode="1" FileType="1" MultiGridLevel="0" OptResolution="45.9333,45.9333,45.9333">
+            <FillColor R="84" G="248" B="27" a="255" />
+            <EdgeColor R="84" G="248" B="27" a="255" />
+            <Primitives>
+                <Box Priority="0">
+                    <P1 X="-7.000000e-01" Y="-1.500714e+00" Z="4.666667e-01" />
+                    <P2 X="-7.000000e-01" Y="1.000000e-03" Z="4.666667e-01" />
+                </Box>
+                <Box Priority="0">
+                    <P1 X="9.333333e-01" Y="-1.500714e+00" Z="4.666667e-01" />
+                    <P2 X="9.333333e-01" Y="1.000000e-03" Z="4.666667e-01" />
+                </Box>
+                <Box Priority="0">
+                    <P1 X="-7.000000e-01" Y="-1.500714e+00" Z="4.666667e-01" />
+                    <P2 X="9.333333e-01" Y="-1.500714e+00" Z="4.666667e-01" />
+                </Box>
+                <Box Priority="0">
+                    <P1 X="-7.000000e-01" Y="1.000000e-03" Z="4.666667e-01" />
+                    <P2 X="9.333333e-01" Y="1.000000e-03" Z="4.666667e-01" />
+                </Box>
+                <Box Priority="0">
+                    <P1 X="-7.000000e-01" Y="-1.500714e+00" Z="4.666667e-01" />
+                    <P2 X="9.333333e-01" Y="1.000000e-03" Z="4.666667e-01" />
+                </Box>
+                <Box Priority="0">
+                    <P1 X="-7.000000e-01" Y="-1.500714e+00" Z="4.666667e-01" />
+                    <P2 X="9.333333e-01" Y="1.000000e-03" Z="4.666667e-01" />
+                </Box>
+            </Primitives>
+        </DumpBox>
+        <DumpBox ID="7" Name="nf2ff_H" Number="0" Type="0" Weight="1" NormDir="-1" StartTime="0" StopTime="0" DumpType="1" DumpMode="1" FileType="1" MultiGridLevel="0" OptResolution="45.9333,45.9333,45.9333">
+            <FillColor R="232" G="231" B="141" a="255" />
+            <EdgeColor R="232" G="231" B="141" a="255" />
+            <Primitives>
+                <Box Priority="0">
+                    <P1 X="-7.000000e-01" Y="-1.500714e+00" Z="4.666667e-01" />
+                    <P2 X="-7.000000e-01" Y="1.000000e-03" Z="4.666667e-01" />
+                </Box>
+                <Box Priority="0">
+                    <P1 X="9.333333e-01" Y="-1.500714e+00" Z="4.666667e-01" />
+                    <P2 X="9.333333e-01" Y="1.000000e-03" Z="4.666667e-01" />
+                </Box>
+                <Box Priority="0">
+                    <P1 X="-7.000000e-01" Y="-1.500714e+00" Z="4.666667e-01" />
+                    <P2 X="9.333333e-01" Y="-1.500714e+00" Z="4.666667e-01" />
+                </Box>
+                <Box Priority="0">
+                    <P1 X="-7.000000e-01" Y="1.000000e-03" Z="4.666667e-01" />
+                    <P2 X="9.333333e-01" Y="1.000000e-03" Z="4.666667e-01" />
+                </Box>
+                <Box Priority="0">
+                    <P1 X="-7.000000e-01" Y="-1.500714e+00" Z="4.666667e-01" />
+                    <P2 X="9.333333e-01" Y="1.000000e-03" Z="4.666667e-01" />
+                </Box>
+                <Box Priority="0">
+                    <P1 X="-7.000000e-01" Y="-1.500714e+00" Z="4.666667e-01" />
+                    <P2 X="9.333333e-01" Y="1.000000e-03" Z="4.666667e-01" />
+                </Box>
+            </Primitives>
+        </DumpBox>
+    </Properties>
+</ContinuousStructure>
