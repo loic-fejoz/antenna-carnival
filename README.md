@@ -9,6 +9,7 @@ Probablement aussi quelques utilitaires.
 ## Antennes
 
 * [J Dualband UHF+VHF](./j-uhf-vhf) : Etude d'une antenne double-J pour l'UHF et la VHF
+* [J 869 Meshtastic scotch](./j-meshtastic-868): Etude et réalisation d'une antenne en scotch de cuivre pour Meshtastic
 
 ## Utilitaires
 

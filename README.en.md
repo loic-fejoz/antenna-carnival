@@ -7,6 +7,7 @@ Hamradio antenna simulation, analysis, and trials. Plus some scripting tools.
 ## Antennes
 
 * [J Dualband UHF+VHF](./j-uhf-vhf)(:fr: not yet translated) A study a dualband UHF+VHF double-J antenna
+* [J 869 Meshtastic scotch](./j-meshtastic-868): (:fr: not yet translated) A copper tape J-antenna for Meshtastic
 
 ## Utility tools
 

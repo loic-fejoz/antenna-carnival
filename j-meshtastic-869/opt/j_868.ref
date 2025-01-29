@@ -1,0 +1,21 @@
+CM 
+CM forw: 75, 0 ; back: 105, 180
+CE
+SY l1=0.2485
+SY l2=0.0833
+SY s=0.008
+SY r=0.01 / ( 2 * pi )	'radius, 1cm/(2*pi)
+SY f=0.008	'feed point
+GW	1	20	0	0	l1	0	0	f	r	'partie haute 1
+GW	2	10	0	0	f	0	0	0	r	'partie basse 1
+GW	3	3	0	0	0	s	0	0	r	'base
+GW	4	10	s	0	0	s	0	f	r	'partie basse 2
+GW	5	20	s	0	f	s	0	l2	r	'partie haute 2
+GW	6	1	0	0	f	s	0	f	r	'feed
+GE	0
+GN	-1
+EK
+EX	0	6	1	0	1	0	0
+FR,0,1,0,0,868
+PQ -1
+PT -1
