@@ -3,7 +3,7 @@ title: Antenne J en scotch de cuivre pour Meshtastic
 author:
  - Loïc Fejoz
 url: https://github.com/loic-fejoz/antenna-carnival/
-date: 2025-01-05
+date: 2025-01-29
 lang: fr-fr
 ---
 # Antenne J en scotch de cuivre pour Meshtastic
