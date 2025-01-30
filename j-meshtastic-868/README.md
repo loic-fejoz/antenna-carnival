@@ -28,7 +28,7 @@ Voilà pour la partie théorique et qui n'a pas d'intérêt particulier à ce st
 
 ![](20240907_154013.jpg)
 
-Pour la réalisation, mon idée a été d'utiliser du scotch de cuivre. J'étais probablement inspiré par cet [article de HackADay](https://hackaday.com/2023/10/13/this-packable-ham-radio-antenna-is-made-from-nothing-but-tape/). Bien évidement, la physique étant différente, il y a des ajustements à faire. Or en fouillant le web, il n'y a pas énormément d'études sur le sujet, sauf un article, probablement de W6NBC (note à moi-même: retrouver le lien), qui fait la corrélation entre le périmètre du fils de 4Nec2 et la largeur du scotch de cuivre. C'est de là que vient ce diamètre bizarre de 1,59mm = 1cm / (2 * $\pi$).
+Pour la réalisation, mon idée a été d'utiliser du scotch de cuivre. J'étais probablement inspiré par cet [article de HackADay](https://hackaday.com/2023/10/13/this-packable-ham-radio-antenna-is-made-from-nothing-but-tape/). Bien évidement, la physique étant différente, il y a des ajustements à faire. Or en fouillant le web, il n'y a pas énormément d'études sur le sujet, sauf un article [_practical foil tape antenna_ par W6NBC](http://w6nbc.com/slides/Foil%20Tape%20Antennas.pdf), qui fait la corrélation entre le périmètre du fils de 4Nec2 et la largeur du scotch de cuivre. C'est de là que vient ce diamètre bizarre de 1,59mm = 1cm / (2 * $\pi$).
 
 Bille en tête, je commence alors la réalisation. Pour information j'ai utilisé du scotch Evergreen Goods Ltd Ruban en Cuivre conducteur. Le gros avantage par rapport à d'autre est qu'il n'y a pas besoin de soudure aux jonctions, la colle est suffisament conductrice.
 
